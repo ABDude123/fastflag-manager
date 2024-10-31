@@ -1,0 +1,304 @@
+[
+    {
+        "name": "DFIntTaskSchedulerTargetFps",
+        "description": "Controls target FPS for the game engine",
+        "default_value": 60,
+        "value_type": "int",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Set to 0 for unlimited FPS. Values like 240-999 for high refresh displays.",
+        "recommended_games": ["Arsenal", "Phantom Forces", "Any FPS Game"]
+    },
+    {
+        "name": "DFIntGPUTextureReductionPercentage",
+        "description": "Controls texture quality reduction",
+        "default_value": 0,
+        "value_type": "int",
+        "category": "Graphics",
+        "exploitable": true,
+        "exploit_description": "Higher values (50-90) significantly improve performance"
+    },
+    {
+        "name": "FFlagDisableSpeculativeGPUMemoryAllocation",
+        "description": "Controls GPU memory allocation behavior",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Enable to reduce VRAM usage and prevent crashes",
+        "recommended_games": ["Adopt Me", "Blox Fruits", "Heavy GPU Games"]
+    },
+    {
+        "name": "DFIntConnectionThrottleMaxExponent",
+        "description": "Network throttling behavior",
+        "default_value": 16,
+        "value_type": "int",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Higher values (24-32) reduce network throttling"
+    },
+    {
+        "name": "FFlagFastPhysicsRemake",
+        "description": "Enhanced physics system",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Enable for improved physics performance"
+    },
+    {
+        "name": "DFIntMaxTextureSize",
+        "description": "Maximum texture size limit",
+        "default_value": 1024,
+        "value_type": "int",
+        "category": "Graphics",
+        "exploitable": true,
+        "exploit_description": "Lower values boost performance significantly"
+    },
+    {
+        "name": "FFlagPreloadAllTextures",
+        "description": "Texture preloading",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Reduces in-game stuttering"
+    },
+    {
+        "name": "DFIntHttpCurlConnectionTimeout",
+        "description": "HTTP connection timeout",
+        "default_value": 30000,
+        "value_type": "int",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Lower values improve connection recovery"
+    },
+    {
+        "name": "FFlagUseShadowMap",
+        "description": "Shadow mapping system",
+        "default_value": true,
+        "value_type": "bool",
+        "category": "Graphics",
+        "exploitable": true,
+        "exploit_description": "Disable for performance boost"
+    },
+    {
+        "name": "DFIntPhysicsThrottleFrames",
+        "description": "Physics update throttling",
+        "default_value": 10,
+        "value_type": "int",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Lower values improve physics accuracy"
+    },
+    {
+        "name": "FFlagEnableGPUAcceleration",
+        "description": "GPU acceleration for UI",
+        "default_value": true,
+        "value_type": "bool",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Toggle for better UI performance"
+    },
+    {
+        "name": "DFIntMaxChannelsPerAudioDevice",
+        "description": "Audio channel limit",
+        "default_value": 32,
+        "value_type": "int",
+        "category": "Audio",
+        "exploitable": true,
+        "exploit_description": "Lower values reduce audio latency"
+    },
+    {
+        "name": "FFlagEnableHardwareTessellation",
+        "description": "Hardware tessellation",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Graphics",
+        "exploitable": true,
+        "exploit_description": "Enable for better terrain detail"
+    },
+    {
+        "name": "DFIntHttpCacheMemoryMaxSize",
+        "description": "HTTP cache size",
+        "default_value": 52428800,
+        "value_type": "int",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Increase for better asset caching"
+    },
+    {
+        "name": "FFlagDisablePostFx",
+        "description": "Post-processing effects",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Graphics",
+        "exploitable": true,
+        "exploit_description": "Disable for massive FPS boost"
+    },
+    {
+        "name": "DFIntMemoryQuotaMB",
+        "description": "Memory allocation limit",
+        "default_value": 512,
+        "value_type": "int",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Set to 4096+ for massive performance boost on high-RAM systems"
+    },
+    {
+        "name": "FFlagDisableLoadingScreenRegion",
+        "description": "Loading screen region checks",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Security",
+        "exploitable": true,
+        "exploit_description": "Can bypass region locks and join restricted servers"
+    },
+    {
+        "name": "DFIntCharacterUpdateRate",
+        "description": "Character position update frequency",
+        "default_value": 60,
+        "value_type": "int",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Values above 240 can cause teleportation-like movement"
+    },
+    {
+        "name": "FFlagBypassMemoryChecks",
+        "description": "Memory validation system",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Disables memory limits, massive performance boost but can crash"
+    },
+    {
+        "name": "DFIntPhysicsProcessingLevel",
+        "description": "Physics processing intensity",
+        "default_value": 3,
+        "value_type": "int",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Set to 0 to nearly disable physics, extreme speed boost"
+    },
+    {
+        "name": "FFlagDisableCollisionCache",
+        "description": "Collision caching system",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Can allow walking through walls temporarily"
+    },
+    {
+        "name": "DFIntRenderThreadCount",
+        "description": "Rendering thread count",
+        "default_value": 4,
+        "value_type": "int",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Set to CPU thread count for massive FPS boost"
+    },
+    {
+        "name": "FFlagDisableAssetLoading",
+        "description": "Asset loading system",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Can make players invisible, huge performance boost"
+    },
+    {
+        "name": "DFIntNetworkResponseWindow",
+        "description": "Network response window",
+        "default_value": 100,
+        "value_type": "int",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Lower values can bypass some anti-cheat measures"
+    },
+    {
+        "name": "FFlagDisablePacketReplication",
+        "description": "Network packet replication",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Can cause severe desync, useful for exploits"
+    },
+    {
+        "name": "DFIntGraphicsQualityLevel",
+        "description": "Graphics quality level",
+        "default_value": 21,
+        "value_type": "int",
+        "category": "Graphics",
+        "exploitable": true,
+        "exploit_description": "Set to -1 for extreme performance boost, makes game barely visible"
+    },
+    {
+        "name": "FFlagDisableAnimationSystem",
+        "description": "Animation system",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Completely disables animations, massive performance boost"
+    },
+    {
+        "name": "DFIntSecurityProtocolLevel",
+        "description": "Security protocol level",
+        "default_value": 2,
+        "value_type": "int",
+        "category": "Security",
+        "exploitable": true,
+        "exploit_description": "Set to 0 to bypass most security checks"
+    },
+    {
+        "name": "FFlagBypassLoadingChecks",
+        "description": "Asset loading validation",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Skips asset validation, can break game but huge performance boost"
+    },
+    {
+        "name": "DFIntProcessPriority",
+        "description": "Process priority level",
+        "default_value": 2,
+        "value_type": "int",
+        "category": "Performance",
+        "exploitable": true,
+        "exploit_description": "Set to 5 for highest priority, can make other apps lag"
+    },
+    {
+        "name": "FFlagEnableInGameMenuV3",
+        "description": "Controls the game menu version",
+        "default_value": true,
+        "value_type": "bool",
+        "category": "Menu",
+        "exploitable": true,
+        "exploit_description": "Disable to use older menu version with fewer restrictions",
+        "recommended_games": ["All"]
+    },
+    {
+        "name": "DFIntMenuFPS",
+        "description": "Menu frame rate limit",
+        "default_value": 60,
+        "value_type": "int",
+        "category": "Menu",
+        "exploitable": true,
+        "exploit_description": "Set to 0 to unlock menu FPS",
+        "recommended_games": ["All"]
+    },
+    {
+        "name": "FFlagDisableMenuAnimation",
+        "description": "Menu animation system",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Menu",
+        "exploitable": true,
+        "exploit_description": "Disable for instant menu responses",
+        "recommended_games": ["All"]
+    }
+] 

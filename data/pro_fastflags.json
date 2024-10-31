@@ -1,0 +1,137 @@
+[
+    {
+        "name": "DFIntCombatOptimizationLevel",
+        "description": "Combat system optimization level",
+        "default_value": 1,
+        "value_type": "int",
+        "category": "Combat",
+        "exploitable": true,
+        "exploit_description": "Higher values (3-5) improve hit registration and reduce combat lag. Particularly effective in PvP games."
+    },
+    {
+        "name": "FFlagBypassAnticheat",
+        "description": "Anticheat system configuration",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Security",
+        "exploitable": true,
+        "exploit_description": "Can potentially bypass some anticheat measures. Use with caution as it may trigger server-side detection."
+    },
+    {
+        "name": "DFIntPlayerNetworkStates",
+        "description": "Player network state synchronization",
+        "default_value": 30,
+        "value_type": "int",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Values above 120 can give significant advantage in combat by improving hit registration and reducing desync"
+    },
+    {
+        "name": "FFlagDisableAnimationStateReplication",
+        "description": "Animation state replication",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Animation",
+        "exploitable": true,
+        "exploit_description": "Can make your animations invisible to other players while maintaining hitboxes"
+    },
+    {
+        "name": "DFIntHitboxExpansionSize",
+        "description": "Hitbox size calculation",
+        "default_value": 0,
+        "value_type": "int",
+        "category": "Combat",
+        "exploitable": true,
+        "exploit_description": "Positive values increase effective hitbox size. Very effective in shooting games."
+    },
+    {
+        "name": "FFlagDisableCharacterStateFilter",
+        "description": "Character state filtering",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Can allow movement in normally restricted states (e.g., during stuns or animations)"
+    },
+    {
+        "name": "DFIntProjectileSimulationMode",
+        "description": "Projectile physics simulation",
+        "default_value": 0,
+        "value_type": "int",
+        "category": "Combat",
+        "exploitable": true,
+        "exploit_description": "Higher values (2-3) can improve projectile accuracy and reduce server-side validation"
+    },
+    {
+        "name": "FFlagEnableClientPhysics",
+        "description": "Client-side physics calculations",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Can give more control over character movement and reduce rubber-banding"
+    },
+    {
+        "name": "DFIntNetworkOwnershipCacheSize",
+        "description": "Network ownership cache",
+        "default_value": 64,
+        "value_type": "int",
+        "category": "Network",
+        "exploitable": true,
+        "exploit_description": "Larger values (256-512) can improve interaction with distant objects and reduce ownership checks"
+    },
+    {
+        "name": "FFlagDisableCollisionFiltering",
+        "description": "Collision filtering system",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Can allow passing through certain types of collision barriers"
+    },
+    {
+        "name": "DFIntRenderDistance",
+        "description": "Maximum render distance",
+        "default_value": 1000,
+        "value_type": "int",
+        "category": "Graphics",
+        "exploitable": true,
+        "exploit_description": "Very high values (5000+) can reveal players and objects beyond normal view distance"
+    },
+    {
+        "name": "FFlagBypassTerrainChecks",
+        "description": "Terrain collision checking",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Physics",
+        "exploitable": true,
+        "exploit_description": "Can allow seeing and sometimes interacting through terrain"
+    },
+    {
+        "name": "DFIntProjectilePenetration",
+        "description": "Projectile penetration depth",
+        "default_value": 0,
+        "value_type": "int",
+        "category": "Combat",
+        "exploitable": true,
+        "exploit_description": "Higher values allow projectiles to pass through multiple targets"
+    },
+    {
+        "name": "FFlagDisableServerValidation",
+        "description": "Server-side validation checks",
+        "default_value": false,
+        "value_type": "bool",
+        "category": "Security",
+        "exploitable": true,
+        "exploit_description": "Can bypass certain server-side checks for position and state"
+    },
+    {
+        "name": "DFIntCriticalHitMultiplier",
+        "description": "Critical hit calculation",
+        "default_value": 100,
+        "value_type": "int",
+        "category": "Combat",
+        "exploitable": true,
+        "exploit_description": "Values above 150 can significantly increase damage output in some games"
+    }
+] 
