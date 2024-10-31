@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: macos-latest
+    permissions:
+      contents: write
+      pages: write
     
     steps:
     - uses: actions/checkout@v2
@@ -48,8 +51,15 @@ jobs:
         asset_name: FastFlagManager.dmg
         asset_content_type: application/x-apple-diskimage
         
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.1.4
+    - name: Setup Pages
+      uses: actions/configure-pages@v2
+        
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        branch: gh-pages
-        folder: docs
+        path: docs
+        
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
